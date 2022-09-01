@@ -11,13 +11,13 @@
 .card {
   display: flex;
   padding: 20px;
-  border: 1px solid black;
+  border: 1px solid #EDEEED;
   box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.03);
-  flex-basis: calc(33, 333% -40px);
+  flex-basis: calc(33.333% - 40px);
   flex-grow: 1;
   flex-shrink: 0;
   margin: 0 20px 20px 20px;
-  background: wheat;
+  background: white;
   position: relative;
 }
 
@@ -39,12 +39,17 @@
 
 .card-comments {
   flex: 1 0 40%;
-  max-width: 40%
+  max-width: 40%;
+}
+
+.comments-item {
+  display: flex;
+  align-items: center;
 }
 
 .comments-item-delete {
   padding: 5px 15px 5px 5px;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .button-controls {
@@ -91,7 +96,7 @@ input {
   resize: vertical;
 }
 
-.loader-sttles {
+.loader-styles {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -99,14 +104,14 @@ input {
   z-index: 999999;
 }
 
-.erorr_message {
+.error-message {
   position: absolute;
   left: 40%;
   top: -80px;
   text-align: center;
   text-transform: uppercase;
   font-size: 18px;
-  max-width: 240 px;
+  max-width: 240px;
   color: #fff;
   background: linear-gradient(20deg, rgba(255, 0, 0, 1) 0%, rgba(200, 0, 0, 1) 100%);
   padding: 10px 20px;
